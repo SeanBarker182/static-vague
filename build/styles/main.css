@@ -155,19 +155,19 @@
       margin: 0 auto; } }
 
 header {
-  background: #264653 url("/images/page_hero_large.png") no-repeat fixed center;
+  background: #264653 url("https://seanbarker182.github.io/static-vague/images/page_hero_large.png") no-repeat fixed center;
   background-size: cover;
   height: 720px; }
 
 @media only screen and (max-width: 1026px) {
   header {
-    background: #264653 url("/images/page_hero_medium.png") no-repeat fixed center;
+    background: #264653 url("https://seanbarker182.github.io/static-vague/images/page_hero_medium.png") no-repeat fixed center;
     background-size: cover;
     height: 658px; } }
 
 @media only screen and (max-width: 768px) {
   header {
-    background: #264653 url("/images/page_hero_small.png") no-repeat fixed center;
+    background: #264653 url("https://seanbarker182.github.io/static-vague/images/page_hero_small.png") no-repeat fixed center;
     background-size: cover;
     height: 75vw; } }
 
