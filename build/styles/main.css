@@ -1,0 +1,199 @@
+.btn-pill {
+  background-color: #f02d3a;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  width: 125px;
+  height: 35px;
+  cursor: pointer; }
+  .btn-pill:active {
+    background-color: rgba(240, 45, 58, 0.5); }
+
+.hamburger-btn-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out; }
+
+.hamburger-btn {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5x rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out; }
+
+.hamburger-btn::before,
+.hamburger-btn::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5x rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out; }
+
+.hamburger-btn::before {
+  transform: translateY(-8px); }
+
+.hamburger-btn::after {
+  transform: translateY(8px); }
+
+.mobile-menu-open .hamburger-btn {
+  transform: translate(-50px);
+  background: transparent;
+  box-shadow: none; }
+
+.mobile-menu-open .hamburger-btn::before {
+  transform: rotate(45deg) translate(35px, -35px); }
+
+.mobile-menu-open .hamburger-btn::after {
+  transform: rotate(-45deg) translate(35px, 35px); }
+
+.global-nav {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between; }
+
+.nav-logo {
+  width: 108px;
+  height: 28px; }
+
+.nav-items {
+  width: 225px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between; }
+
+.nav-item {
+  font-size: 14px;
+  font-weight: 300; }
+  .nav-item:hover {
+    font-weight: 400; }
+  .nav-item a {
+    text-decoration: none;
+    color: #ffffff; }
+
+.hamburger-btn {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .hamburger-btn {
+    display: block; }
+  .hamburger-btn,
+  .nav-logo {
+    z-index: 2; }
+  .nav-items {
+    display: block;
+    position: absolute;
+    background: #264653;
+    width: 100vw;
+    left: 0;
+    top: -1200px;
+    height: calc(100vh - 150px);
+    padding-top: 150px;
+    transition: all 1s ease;
+    opacity: 0; }
+    .nav-items .nav-item {
+      margin: 0 50px;
+      padding: 20px 0;
+      border-bottom: 1px solid #86868b; }
+      .nav-items .nav-item a {
+        font-weight: 600;
+        font-size: 16px; }
+  .nav-items.mobile-menu-open {
+    top: 0px;
+    opacity: 1;
+    transition: all 1s ease; } }
+
+.cta-section {
+  padding-top: 135px;
+  padding-bottom: 235px;
+  width: 520px;
+  color: #ffffff; }
+  .cta-section h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 65px; }
+  .cta-section p {
+    margin: 20px 0;
+    font-size: 24px; }
+
+.cta-vague {
+  color: #e9c46a; }
+
+@media only screen and (max-width: 1026px) {
+  .cta-section {
+    width: 450px; }
+    .cta-section h1 {
+      font-size: 52px;
+      line-height: 57px; }
+    .cta-section p {
+      font-size: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .cta-section {
+    padding-top: 12vw;
+    padding-bottom: 15.5vw;
+    width: 65vw;
+    margin: 0 auto; }
+    .cta-section h1 {
+      font-size: 7vw;
+      line-height: 8vw;
+      text-align: center; }
+    .cta-section p {
+      margin: 4vw 0;
+      font-size: 3vw;
+      text-align: center; }
+    .cta-section .btn-pill {
+      display: block;
+      margin: 0 auto; } }
+
+header {
+  background: #264653 url("/images/page_hero_large.png") no-repeat fixed center;
+  background-size: cover;
+  height: 720px; }
+
+@media only screen and (max-width: 1026px) {
+  header {
+    background: #264653 url("/images/page_hero_medium.png") no-repeat fixed center;
+    background-size: cover;
+    height: 658px; } }
+
+@media only screen and (max-width: 768px) {
+  header {
+    background: #264653 url("/images/page_hero_small.png") no-repeat fixed center;
+    background-size: cover;
+    height: 75vw; } }
+
+.services-cards {
+  background: #000 url(/images/double-bubble-outline.png) repeat;
+  height: 300px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; }
+
+.scroll-lock {
+  overflow-y: hidden; }
+
+.container {
+  width: 980px;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 1026px) {
+  .container {
+    width: 692px; } }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 87.5%; } }

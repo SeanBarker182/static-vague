@@ -1,0 +1,60 @@
+@import '../swatch';
+
+.cta-section {
+	padding-top: 135px;
+	padding-bottom: 235px;
+	width: 520px;
+	color: #ffffff;
+	h1 {
+		font-size: 60px;
+		font-weight: 500;
+		line-height: 65px;
+	}
+	p {
+		margin: 20px 0;
+		font-size: 24px;
+	}
+}
+
+.cta-vague {
+	color: $vague-yellow;
+}
+
+@media only screen and (max-width: 1026px) {
+	.cta-section {
+		width: 450px;
+		h1 {
+			font-size: 52px;
+			line-height: 57px;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.cta-section {
+		padding-top: 12vw;
+		padding-bottom: 15.5vw;
+		width: 65vw;
+		margin: 0 auto;
+
+		h1 {
+			font-size: 7vw;
+			line-height: 8vw;
+			text-align: center;
+		}
+		p {
+			margin: 4vw 0;
+			font-size: 3vw;
+			text-align: center;
+		}
+		.btn-pill {
+			display: block;
+			margin: 0 auto;
+			// width: 80%;
+			// height: 10.86956522vw;
+			// font-size: 4.968944099vw;
+		}
+	}
+}

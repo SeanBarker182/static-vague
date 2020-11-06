@@ -1,0 +1,74 @@
+@import '../swatch';
+
+.global-nav {
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-logo {
+	width: 108px;
+	height: 28px;
+}
+
+.nav-items {
+	width: 225px;
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-item {
+	font-size: 14px;
+	font-weight: 300;
+
+	&:hover {
+		font-weight: 400;
+	}
+	a {
+		text-decoration: none;
+		color: #ffffff;
+	}
+}
+
+.hamburger-btn {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.hamburger-btn {
+		display: block;
+	}
+	.hamburger-btn,
+	.nav-logo {
+		z-index: 2;
+	}
+	.nav-items {
+		display: block;
+		position: absolute;
+		background: $vague-dark-blue;
+		width: 100vw;
+		left: 0;
+		top: -1200px;
+		height: calc(100vh - 150px);
+		padding-top: 150px;
+		transition: all 1s ease;
+		opacity: 0;
+
+		.nav-item {
+			margin: 0 50px;
+			padding: 20px 0;
+			border-bottom: 1px solid $vague-gray;
+			a {
+				font-weight: 600;
+				font-size: 16px;
+			}
+		}
+	}
+	.nav-items.mobile-menu-open {
+		top: 0px;
+		opacity: 1;
+		transition: all 1s ease;
+	}
+}

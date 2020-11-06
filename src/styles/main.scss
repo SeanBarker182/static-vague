@@ -1,0 +1,32 @@
+@import './_components/base';
+@import './_header/base';
+@import './_services/base';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+.scroll-lock {
+	overflow-y: hidden;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+@media only screen and (max-width: 1026px) {
+	.container {
+		width: 692px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 87.5%;
+	}
+}
