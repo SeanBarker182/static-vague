@@ -79,13 +79,13 @@
     text-decoration: none;
     color: #ffffff; }
 
-.hamburger-btn {
+.hamburger-btn-container {
   display: none; }
 
 @media only screen and (max-width: 768px) {
-  .hamburger-btn {
-    display: block; }
-  .hamburger-btn,
+  .hamburger-btn-container {
+    display: flex; }
+  .hamburger-btn-container,
   .nav-logo {
     z-index: 2; }
   .nav-items {
@@ -104,8 +104,10 @@
       padding: 20px 0;
       border-bottom: 1px solid #86868b; }
       .nav-items .nav-item a {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 16px; }
+    .nav-items :last-child {
+      border-bottom: none; }
   .nav-items.mobile-menu-open {
     top: 0px;
     opacity: 1;
@@ -140,15 +142,16 @@
   .cta-section {
     padding-top: 12vw;
     padding-bottom: 15.5vw;
-    width: 65vw;
+    width: 62.5vw;
     margin: 0 auto; }
     .cta-section h1 {
-      font-size: 7vw;
+      font-size: 7.5vw;
       line-height: 8vw;
       text-align: center; }
     .cta-section p {
       margin: 4vw 0;
-      font-size: 3vw;
+      font-size: 4vw;
+      line-height: 4.5vw;
       text-align: center; }
     .cta-section .btn-pill {
       display: block;
@@ -156,23 +159,15 @@
 
 header {
   background: #264653 url("https://seanbarker182.github.io/static-vague/images/page_hero_large.png") no-repeat fixed center;
-  background-size: cover;
-  height: 720px; }
-
-@media only screen and (max-width: 1026px) {
-  header {
-    background: #264653 url("https://seanbarker182.github.io/static-vague/images/page_hero_medium.png") no-repeat fixed center;
-    background-size: cover;
-    height: 658px; } }
+  background-size: cover; }
 
 @media only screen and (max-width: 768px) {
   header {
-    background: #264653 url("https://seanbarker182.github.io/static-vague/images/page_hero_small.png") no-repeat fixed center;
-    background-size: cover;
-    height: 75vw; } }
+    background: #264653 url("https://seanbarker182.github.io/static-vague/images/page_hero_small.png") no-repeat;
+    background-size: cover; } }
 
 .services-cards {
-  background: #000 url(/images/double-bubble-outline.png) repeat;
+  background: #000 url("https://seanbarker182.github.io/static-vague/images/double-bubble-outline.png") repeat;
   height: 300px; }
 
 * {

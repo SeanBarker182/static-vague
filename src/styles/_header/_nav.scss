@@ -32,15 +32,16 @@
 	}
 }
 
-.hamburger-btn {
+.hamburger-btn-container {
 	display: none;
 }
 
+// Drops down the mobile menu
 @media only screen and (max-width: 768px) {
-	.hamburger-btn {
-		display: block;
+	.hamburger-btn-container {
+		display: flex;
 	}
-	.hamburger-btn,
+	.hamburger-btn-container,
 	.nav-logo {
 		z-index: 2;
 	}
@@ -61,9 +62,13 @@
 			padding: 20px 0;
 			border-bottom: 1px solid $vague-gray;
 			a {
-				font-weight: 600;
+				font-weight: 400;
 				font-size: 16px;
 			}
+		}
+
+		:last-child {
+			border-bottom: none;
 		}
 	}
 	.nav-items.mobile-menu-open {
