@@ -1,6 +1,164 @@
-.services-cards {
+@import '../swatch';
+
+.services-cards-section {
 	background: #000
 		url('https://seanbarker182.github.io/static-vague/images/double-bubble-outline.png')
 		repeat;
-	height: 300px;
+}
+
+.services-cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-card {
+	width: 205px;
+	border-radius: 12px;
+	padding: 28px 55px;
+	margin-top: -55px;
+	margin-bottom: 100px;
+	text-align: center;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
+
+	p {
+		color: $vague-gray;
+		font-size: 16px;
+		font-weight: 300;
+	}
+
+	hr {
+		margin: 0 -50px;
+		border: 1px solid $vague-almost-white;
+	}
+}
+
+.card-title {
+	.card-icon {
+		color: $vague-yellow;
+		font-size: 64px;
+	}
+	.service-type {
+		margin-top: 20px;
+	}
+}
+
+.card-offering {
+	h2 {
+		font-size: 36px;
+		font-weight: 600;
+		margin-top: 35px;
+	}
+	.offering-caption {
+		margin-bottom: 40px;
+	}
+	.times {
+		font-size: 21px;
+	}
+}
+
+.card-pricing {
+	.starting-at {
+		margin-top: 18px;
+		font-size: 14px;
+	}
+	h3 {
+		color: $vague-yellow;
+		font-size: 36px;
+		font-weight: 600;
+		margin: 5px 0;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1026px) {
+	.services-cards {
+		flex-direction: column;
+		justify-content: space-between;
+		padding-bottom: 80px;
+	}
+	article:first-of-type {
+		margin-top: -55px;
+	}
+	.services-card {
+		width: 643px;
+		padding: 25px;
+		margin-bottom: 40px;
+		margin-top: 0;
+		text-align: center;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		p {
+			color: $vague-gray;
+			font-size: 16px;
+			font-weight: 300;
+		}
+		hr {
+			display: none;
+		}
+	}
+
+	.card-title {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100px;
+		text-align: left;
+
+		.card-icon {
+			color: $vague-yellow;
+			font-size: 64px;
+		}
+		.service-type {
+			margin-top: 0;
+		}
+	}
+
+	.card-offering {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		h2 {
+			font-size: 36px;
+			font-weight: 600;
+			margin-top: 0;
+		}
+		.times {
+			font-size: 21px;
+		}
+		.offering-caption {
+			margin-bottom: 0;
+		}
+	}
+
+	.card-pricing {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-left: auto;
+
+		.starting-at {
+			margin-top: 0;
+			font-size: 14px;
+		}
+		h3 {
+			color: $vague-yellow;
+			font-size: 36px;
+			font-weight: 600;
+			margin: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.services-cards {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.services-card {
+		width: 280px;
+		margin: -25px auto 100px auto;
+	}
 }

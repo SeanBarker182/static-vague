@@ -95,8 +95,8 @@
     width: 100vw;
     left: 0;
     top: -1200px;
-    height: calc(100vh - 150px);
-    padding-top: 150px;
+    height: 100vh;
+    padding-top: 100px;
     transition: all 1s ease;
     opacity: 0; }
     .nav-items .nav-item {
@@ -166,9 +166,123 @@ header {
     background: #264653 url("https://seanbarker182.github.io/static-vague/images/page_hero_small.png") no-repeat;
     background-size: cover; } }
 
+.services-cards-section {
+  background: #000 url("https://seanbarker182.github.io/static-vague/images/double-bubble-outline.png") repeat; }
+
 .services-cards {
-  background: #000 url("https://seanbarker182.github.io/static-vague/images/double-bubble-outline.png") repeat;
-  height: 300px; }
+  display: flex;
+  justify-content: space-between; }
+
+.services-card {
+  width: 205px;
+  border-radius: 12px;
+  padding: 28px 55px;
+  margin-top: -55px;
+  margin-bottom: 100px;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; }
+  .services-card p {
+    color: #86868b;
+    font-size: 16px;
+    font-weight: 300; }
+  .services-card hr {
+    margin: 0 -50px;
+    border: 1px solid #f5f5f7; }
+
+.card-title .card-icon {
+  color: #e9c46a;
+  font-size: 64px; }
+
+.card-title .service-type {
+  margin-top: 20px; }
+
+.card-offering h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 35px; }
+
+.card-offering .offering-caption {
+  margin-bottom: 40px; }
+
+.card-offering .times {
+  font-size: 21px; }
+
+.card-pricing .starting-at {
+  margin-top: 18px;
+  font-size: 14px; }
+
+.card-pricing h3 {
+  color: #e9c46a;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 5px 0; }
+
+@media only screen and (min-width: 768px) and (max-width: 1026px) {
+  .services-cards {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 80px; }
+  article:first-of-type {
+    margin-top: -55px; }
+  .services-card {
+    width: 643px;
+    padding: 25px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .services-card p {
+      color: #86868b;
+      font-size: 16px;
+      font-weight: 300; }
+    .services-card hr {
+      display: none; }
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    text-align: left; }
+    .card-title .card-icon {
+      color: #e9c46a;
+      font-size: 64px; }
+    .card-title .service-type {
+      margin-top: 0; }
+  .card-offering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .card-offering h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-top: 0; }
+    .card-offering .times {
+      font-size: 21px; }
+    .card-offering .offering-caption {
+      margin-bottom: 0; }
+  .card-pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto; }
+    .card-pricing .starting-at {
+      margin-top: 0;
+      font-size: 14px; }
+    .card-pricing h3 {
+      color: #e9c46a;
+      font-size: 36px;
+      font-weight: 600;
+      margin: 0; } }
+
+@media only screen and (max-width: 768px) {
+  .services-cards {
+    flex-direction: column;
+    justify-content: center; }
+  .services-card {
+    width: 280px;
+    margin: -25px auto 100px auto; } }
 
 * {
   margin: 0;
@@ -176,7 +290,8 @@ header {
 
 html {
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: #f5f5f7; }
 
 .scroll-lock {
   overflow-y: hidden; }

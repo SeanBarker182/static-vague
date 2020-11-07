@@ -1,3 +1,4 @@
+@import './swatch';
 @import './_components/base';
 @import './_header/base';
 @import './_services/base';
@@ -10,6 +11,7 @@
 html {
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
+	background: $vague-almost-white;
 }
 
 .scroll-lock {
