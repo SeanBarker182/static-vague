@@ -1,2 +1,7 @@
+@import '../swatch';
 @import './aboutHeader';
 @import './aboutText';
+
+.about-section {
+	background: $vague-almost-white;
+}
