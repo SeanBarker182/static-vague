@@ -362,7 +362,8 @@ header:before {
 @media only screen and (max-width: 767px) {
   .services-text-section {
     display: block;
-    padding: 60px 0; }
+    padding: 60px 0;
+    text-align: justify; }
     .services-text-section img:first-of-type {
       display: none;
       width: 75%;
@@ -371,9 +372,9 @@ header:before {
     .services-text-section .services-medium-large {
       display: none; }
   .services-text h1 {
-    font-size: 8vw;
+    font-size: 7.5vw;
     width: 100%;
-    line-height: 7vw; }
+    line-height: 8vw; }
   .services-text p {
     margin: 3vw auto;
     font-size: 4.5vw;
@@ -381,7 +382,7 @@ header:before {
     width: 100%; }
   .services-text .btn-pill {
     display: block;
-    margin: 10px auto; } }
+    margin: 10px 0; } }
 
 .about-header h1 {
   font-size: 72px;
