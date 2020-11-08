@@ -371,7 +371,7 @@ header {
       margin: 10px auto; } }
 
 .about-header {
-  background: #264653 url("/images/about_header.png") no-repeat fixed center;
+  background: #264653 url("https://seanbarker182.github.io/static-vague/images/about_header.png") no-repeat fixed center;
   background-size: cover; }
   .about-header h1 {
     font-size: 72px;
@@ -379,6 +379,87 @@ header {
     color: #fff;
     text-align: center;
     padding: 256px 0; }
+
+@media only screen and (min-width: 768px) and (max-width: 1026px) {
+  .about-header h1 {
+    font-size: 60px;
+    padding: 184px 0; } }
+
+@media only screen and (max-width: 768px) {
+  .about-header h1 {
+    font-size: 42px;
+    padding: 184px 0; } }
+
+.about-text-container {
+  padding: 120px 0;
+  display: grid;
+  grid-template-columns: 58% 42%; }
+  .about-text-container aside {
+    justify-self: end; }
+  .about-text-container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .about-text-container h1 {
+    font-size: 32px;
+    font-weight: 500; }
+  .about-text-container h4 {
+    font-size: 18px;
+    font-weight: 500; }
+  .about-text-container p {
+    font-size: 18px;
+    color: #86868b; }
+  .about-text-container .about-text-img-lg {
+    display: block;
+    width: 325px;
+    height: auto; }
+  .about-text-container .about-text-img-md {
+    display: none; }
+  .about-text-container .about-text-img-sm {
+    display: none; }
+
+@media only screen and (min-width: 768px) and (max-width: 1026px) {
+  .about-text-container {
+    grid-template-columns: 63.5% 36.4%; }
+    .about-text-container .about-text-img-lg {
+      display: none; }
+    .about-text-container .about-text-img-md {
+      display: block;
+      width: 225px;
+      height: auto; }
+    .about-text-container .about-text-img-sm {
+      display: none; }
+    .about-text-container h1 {
+      font-size: 28px; }
+    .about-text-container h4 {
+      font-size: 16px; }
+    .about-text-container p {
+      font-size: 16px; } }
+
+@media only screen and (max-width: 768px) {
+  .about-text-container {
+    padding: 80px 0;
+    grid-template-columns: 100%; }
+    .about-text-container article {
+      grid-row-start: 2; }
+      .about-text-container article h1 {
+        margin: 5px; }
+      .about-text-container article h4 {
+        margin: 5px; }
+      .about-text-container article p {
+        margin: 10px 5px; }
+    .about-text-container aside {
+      grid-row-start: 1;
+      justify-self: stretch;
+      margin-bottom: 40px; }
+    .about-text-container .about-text-img-lg {
+      display: none; }
+    .about-text-container .about-text-img-md {
+      display: none; }
+    .about-text-container .about-text-img-sm {
+      display: block;
+      width: 100%;
+      height: auto; } }
 
 * {
   margin: 0;
