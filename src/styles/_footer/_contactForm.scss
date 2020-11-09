@@ -34,6 +34,12 @@
 			outline: none;
 			background: $vague-almost-white;
 		}
+		input::placeholder {
+			font-family: 'Montserrat', sans-serif;
+		}
+		textarea::placeholder {
+			font-family: 'Montserrat', sans-serif;
+		}
 		.btn-block {
 			margin: 15px auto 0 auto;
 			display: block;
