@@ -228,14 +228,31 @@
 				<section class="contact-form">
 					<div class="form-container">
 						<h2 class="footer-header">CONTACT US</h2>
-						<form action="">
-							<input type="text" placeholder="Full Name" />
-							<input type="text" placeholder="E-mail" />
+						<form action="" id="contact-form">
+							<input
+								type="text"
+								id="form-name"
+								placeholder="Full Name"
+								required
+							/>
+							<input
+								type="email"
+								id="form-email"
+								placeholder="E-mail"
+								required
+							/>
 							<textarea
 								rows="6"
 								placeholder="What can we help you out with?"
+								id="form-textarea"
 							></textarea>
-							<button class="btn-block">Submit</button>
+							<button class="btn-block" type="submit">
+								Submit<i
+									class="fas fa-circle-notch spinner-off"
+									id="form-spinner"
+								></i>
+							</button>
+							<div id="form-message" class="form-message"></div>
 						</form>
 					</div>
 				</section>

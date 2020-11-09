@@ -47,10 +47,20 @@
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1026px) {
-	.form-container {
-		margin-left: 0;
-	}
+.spinner-off {
+	display: none !important;
+}
+.spinner-spinning {
+	margin-left: 5px;
+	-webkit-animation: spin 0.5s linear infinite;
+	-moz-animation: spin 0.5s linear infinite;
+	animation: spin 0.5s linear infinite;
+}
+
+.form-message {
+	color: #fff;
+	font-size: 14px;
+	margin-top: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -70,5 +80,28 @@
 	textarea {
 		width: 87.5% !important;
 		max-width: 450px;
+	}
+}
+
+@-moz-keyframes spin {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1026px) {
+	.form-container {
+		margin-left: 0;
 	}
 }
