@@ -35,7 +35,7 @@ ScrollTrigger.matchMedia({
 				start: 'top bottom',
 			},
 			x: 500,
-			opactiy: 0,
+			opacity: 0,
 			duration: 1.5,
 		});
 	},
