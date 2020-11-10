@@ -25,9 +25,13 @@
 						<div class="hamburger-btn"></div>
 					</div>
 					<ul class="nav-items">
-						<li class="nav-item"><a href="">SERVICES</a></li>
-						<li class="nav-item"><a href="">ABOUT</a></li>
-						<li class="nav-item"><a href="">CONTACT</a></li>
+						<li class="nav-item">
+							<a href="#services" id="navServices">SERVICES</a>
+						</li>
+						<li class="nav-item"><a href="#about" id="navAbout">ABOUT</a></li>
+						<li class="nav-item">
+							<a href="#contact" id="navContact">CONTACT</a>
+						</li>
 					</ul>
 				</nav>
 				<div class="cta-section">
@@ -38,12 +42,12 @@
 						Enterprise solutions that allow your people to focus on what matters
 						the&nbsp;most.
 					</p>
-					<button class="btn-pill">Learn More</button>
+					<button class="btn-pill" id="learnMoreBtn">Learn More</button>
 				</div>
 			</div>
 		</header>
 		<!-- START CARDS SECTION -->
-		<section class="services-cards-section">
+		<section class="services-cards-section" id="services">
 			<div class="container">
 				<div class="services-cards">
 					<article class="services-card">
@@ -119,7 +123,7 @@
 						intersection of quality and longevity. Kick back and relax, we’ll
 						take it from here.
 					</p>
-					<button class="btn-pill">Contact Us</button>
+					<button class="btn-pill" id="contactUsBtn">Contact Us</button>
 				</article>
 				<img
 					class="services-medium-large"
@@ -129,7 +133,7 @@
 				<img class="services-medium-large" src="/images/server_bg.png" alt="" />
 			</div>
 		</section>
-		<section class="about-section">
+		<section class="about-section" id="about">
 			<div class="about-header">
 				<h1>About us</h1>
 			</div>
@@ -225,10 +229,10 @@
 						></a>
 					</div>
 				</section>
-				<section class="contact-form">
+				<section class="contact-form" id="contact">
 					<div class="form-container">
 						<h2 class="footer-header">CONTACT US</h2>
-						<form action="" id="contact-form">
+						<form id="contact-form">
 							<input
 								type="text"
 								id="form-name"

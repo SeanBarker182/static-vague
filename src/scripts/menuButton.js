@@ -5,7 +5,10 @@ let mobileMenuOpen = false;
 
 // Add the click listener to the hamburger button
 hamburgerBtn.addEventListener('click', () => {
-	console.log('click');
+	toggleMobileMenu();
+});
+
+function toggleMobileMenu() {
 	if (!mobileMenuOpen) {
 		hamburgerBtn.classList.add('mobile-menu-open');
 		navItems.classList.add('mobile-menu-open');
@@ -17,4 +20,4 @@ hamburgerBtn.addEventListener('click', () => {
 		root.classList.remove('scroll-lock');
 		mobileMenuOpen = false;
 	}
-});
+}
