@@ -36,7 +36,7 @@ ScrollTrigger.matchMedia({
 			},
 			x: 500,
 			opacity: 0,
-			duration: 1.5,
+			duration: 1,
 		});
 	},
 });
