@@ -14,6 +14,8 @@
 			src="https://kit.fontawesome.com/c22a14f674.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 	</head>
 	<body>
 		<!-- START PAGE HERO -->
@@ -35,14 +37,16 @@
 					</ul>
 				</nav>
 				<div class="cta-section">
-					<h1>
+					<h1 class="cta-item">
 						Unleash the power&nbsp;of&nbsp;<span class="cta-vague">Vague</span>
 					</h1>
-					<p>
+					<p class="cta-item">
 						Enterprise solutions that allow your people to focus on what matters
 						the&nbsp;most.
 					</p>
-					<button class="btn-pill" id="learnMoreBtn">Learn More</button>
+					<button class="btn-pill cta-item" id="learnMoreBtn">
+						Learn More
+					</button>
 				</div>
 			</div>
 		</header>
@@ -115,7 +119,7 @@
 				/>
 				<article class="services-text">
 					<h1>
-						<span class="bold-they">They</span> don't make them<br />like they
+						<span class="bold-they">They</span> don't make them <br />like they
 						used to.<br /><span class="we-do-yellow">But we do.</span>
 					</h1>
 					<p>
@@ -126,11 +130,15 @@
 					<button class="btn-pill" id="contactUsBtn">Contact Us</button>
 				</article>
 				<img
-					class="services-medium-large"
+					class="services-medium-large services-server-img"
 					src="/images/server_img.png"
 					alt="Server room"
 				/>
-				<img class="services-medium-large" src="/images/server_bg.png" alt="" />
+				<img
+					class="services-medium-large services-server-bg"
+					src="/images/server_bg.png"
+					alt=""
+				/>
 			</div>
 		</section>
 		<section class="about-section" id="about">

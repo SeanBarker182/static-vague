@@ -354,7 +354,8 @@ header:before {
     width: 380px;
     font-size: 24px;
     margin: 20px 0;
-    color: #86868b; }
+    color: #86868b;
+    font-weight: 300; }
 
 @media only screen and (min-width: 768px) and (max-width: 1026px) {
   .services-text-section {
