@@ -123,7 +123,8 @@
   .nav-items.mobile-menu-open {
     top: 0px;
     opacity: 1;
-    transition: all 1s ease; } }
+    transition: all 1s ease;
+    z-index: 1; } }
 
 .cta-section {
   padding-top: 135px;
